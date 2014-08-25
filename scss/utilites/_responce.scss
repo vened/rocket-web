@@ -1,6 +1,6 @@
 .b-wrap{
   width: 1024px;
-  margin: 0 auto; 
+  margin: 0 auto;
 
   .b-wrap__cont{
     padding-left: 15px;
@@ -11,7 +11,7 @@
   display: block;
 }
 
-@media (min-width: 730px) and (max-width: 1024px) {
+@media (min-width: 780px) and (max-width: 1024px) {
   .b-wrap{
     width: 100%;
   }
@@ -20,37 +20,13 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 730px) {
+@media (min-width: 320px) and (max-width: 780px) {
+  body{
+    font-size: 12px;
+  }
   .b-wrap{
     width: 100%;
-  }
-  .navigation{
-    display: none;
-    float: none;
-    clear: both;
-    margin-right: -15px !important;
-    margin-left: -15px !important;
-    
-    
-    .navigation-item{
-      display: block;
-      border-top: 1px solid rgba(255, 255, 255, .5);
-      text-align: center;
-      background-color: $bgr-blue-opacity;
-      
-      &:hover{
-        background-color: $bgr-blue-opacity-2;
-      }
-    }
-  }
-  .navigation_expand{
-    display: block;
-  }
-}
-
-@media (min-width: 100px) and (max-width: 320px) {
-  .b-wrap{
-    width: 320px;
+    min-width: 320px;
   }
   .navigation{
     display: none;
@@ -72,5 +48,42 @@
   }
   .navigation_expand{
     display: block;
+  }
+  .slogan{
+    padding-top: 70px;
+    
+    h1{
+      font-size: 1.8em;
+    }
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1600px) and (min-height: 400px) and (max-height: 600px) {
+  .slogan{
+    padding-top: 70px;
+
+    .slogan-img{
+      img{
+        width: 48%;
+      }
+    }
+    h1{
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1600px) and (min-height: 600px) and (max-height: 720px){
+  .slogan{
+    padding-top: 100px;
+    
+    .slogan-img{
+      img{
+        width: 58%;
+      }
+    }
+    h1{
+      font-size: 1.5em;
+    }
   }
 }
