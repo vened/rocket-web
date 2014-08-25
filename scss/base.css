@@ -1696,10 +1696,52 @@ hr {
   .screen.screen-orange {
     background-color: #ff772d;
     color: white; }
+  .screen.screen-blue-light {
+    background-color: #d4e7ed; }
+    .screen.screen-blue-light .btn {
+      height: 55px;
+      line-height: 55px;
+      margin-top: 10px;
+      font-size: 1.3em; }
   .screen .screen_cont {
     padding: 60px 0; }
   .screen h2 {
     text-align: center; }
+
+.price-list h3 {
+  font-size: 1.25em;
+  color: #ff772d;
+  margin: 0; }
+.price-list .price {
+  font-size: 3em;
+  line-height: 1.1em;
+  color: #ff772d;
+  font-weight: 600; }
+.price-list ul {
+  height: 320px;
+  margin: 15px 0 25px 0;
+  padding-left: 15px;
+  list-style-type: disc;
+  color: #ff772d; }
+  .price-list ul li {
+    margin: 10px 0; }
+    .price-list ul li .li-cont {
+      color: #54626e; }
+
+.btn {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.125em;
+  color: white;
+  text-align: center;
+  background-color: #ff772d;
+  border-radius: 4px;
+  text-decoration: none; }
+  .btn:hover {
+    opacity: .8; }
+  .btn:active {
+    opacity: .9; }
 
 nav {
   position: fixed;
@@ -1768,20 +1810,39 @@ nav {
   .row .col-2 {
     float: right;
     width: 45%; }
+  .row .col4 {
+    float: left;
+    width: 21.25%;
+    margin-left: 5%; }
+    .row .col4:first-child {
+      margin-left: 0; }
 
-@media (min-width: 320px) and (max-width: 510px) {
+@media (min-width: 120px) and (max-width: 510px) {
   .row .col-1,
-  .row .col-2 {
+  .row .col-2,
+  .row .col4 {
     float: none;
     width: 100%;
-    margin: 30px 0; } }
+    margin: 30px 0; }
+
+  .price-list {
+    font-size: 1.4em; } }
+@media (min-width: 510px) and (max-width: 965px) {
+  .row .col4 {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 30px; }
+    .row .col4:first-child {
+      margin-left: 2.5%;
+      margin-right: 2.5%; } }
 @media (min-width: 780px) and (max-width: 1024px) {
   .b-wrap {
     width: 100%; }
 
   .navigation {
     display: block; } }
-@media (min-width: 320px) and (max-width: 780px) {
+@media (min-width: 120px) and (max-width: 780px) {
   body {
     font-size: 12px; }
 

@@ -51,7 +51,7 @@ hr{
   margin: 45px 15px;
   background-color: $orange-light;
   border-width: 0;
-  
+
   &.blue{
     margin: 0;
     background-color: #e5f1f4;
@@ -100,7 +100,7 @@ hr{
   .icon{
     font-size: 30px;
   }
-  
+
   &:hover{
     opacity: .7;
   }
@@ -154,11 +154,74 @@ hr{
     color: $text-color-base-2;
   }
 
+  &.screen-blue-light{
+    background-color: $blue-light;
+    
+    .btn{
+      height: 55px;
+      line-height: 55px;
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+  }
+  
   .screen_cont{
     padding: 60px 0;
   }
 
   h2{
     text-align: center;
+  }
+}
+
+.price-list{
+
+  h3{
+    font-size: 1.25em;
+    color: $orange;
+    margin: 0;
+  }
+
+  .price{
+    font-size: 3em;
+    line-height: 1.1em;
+    color: $orange;
+    font-weight: 600;
+  }
+  
+  ul{
+    height: 320px;
+    margin: 15px 0 25px 0;
+    padding-left: 15px;
+    list-style-type: disc;
+    color: $orange;
+
+    li{
+      margin: 10px 0;
+
+      .li-cont{
+        color: $text-color-base;
+      }
+    }
+  }
+}
+
+.btn{
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.125em;
+  color: $text-color-base-2;
+  text-align: center;
+  background-color: $orange;
+  border-radius: 4px;
+  text-decoration: none;
+  
+  &:hover{
+    opacity: .8;
+  }
+
+  &:active{
+    opacity: .9;
   }
 }
