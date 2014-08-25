@@ -11,6 +11,40 @@
   display: block;
 }
 
+.row{
+  display: block;
+  padding: 0 15px;
+
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .col-1{
+    float: left;
+    width: 45%;
+  }
+
+  .col-2{
+    float: right;
+    width: 45%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+  .row{
+    .col-1,
+    .col-2{
+      float: none;
+      width: 100%;
+      margin: 30px 0;
+    }
+  }
+}
+
 @media (min-width: 780px) and (max-width: 1024px) {
   .b-wrap{
     width: 100%;
@@ -51,7 +85,7 @@
   }
   .slogan{
     padding-top: 70px;
-    
+
     h1{
       font-size: 1.8em;
     }
@@ -73,13 +107,13 @@
   }
 }
 
-@media (min-width: 780px) and (max-width: 1600px) and (min-height: 600px) and (max-height: 720px){
+@media (min-width: 780px) and (max-width: 1600px) and (min-height: 600px) and (max-height: 720px) {
   .slogan{
     padding-top: 100px;
-    
+
     .slogan-img{
       img{
-        width: 58%;
+        width: 70%;
       }
     }
     h1{

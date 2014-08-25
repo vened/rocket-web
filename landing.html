@@ -19,17 +19,17 @@
 			<span class="navigation_expand js-nav-expand"><span class="icon icon-align-justify"></span></span>
 
 			<div class="navigation js-nav">
-				<a class="navigation-item" href="#">О нас</a>
-				<a class="navigation-item" href="#">Особенности</a>
-				<a class="navigation-item" href="#">Стоимость</a>
-				<a class="navigation-item" href="#">Портфолио</a>
-				<a class="navigation-item" href="#">Контакты</a>
+				<a class="navigation-item" href="#about">О нас</a>
+				<a class="navigation-item" href="#features">Особенности</a>
+				<a class="navigation-item" href="#price">Стоимость</a>
+				<a class="navigation-item" href="#portfolio">Портфолио</a>
+				<a class="navigation-item" href="#contacts">Контакты</a>
 			</div>
 		</div>
 	</div>
 </nav>
 
-<section class="screen-1">
+<section class="screen-1" id="home">
 	<div class="b-wrap slogan">
 		<div class="slogan-img">
 			<img src="images/screen-1.png" alt="Дизайн и разработка сайтов, приложений и комплексные решения для проекто в цифровой среде"/>
@@ -38,13 +38,143 @@
 			Дизайн и разработка сайтов, приложений и комплексные решения для проекто в цифровой среде
 		</h1>
 	</div>
-	<a class="next-screen" href="#">
+	<a class="next-screen chevron" href="#about">
 		<span class="icon-chevron-down"></span>
 	</a>
 </section>
 
+<section class="screen screen-2" id="about">
+	<div class="b-wrap screen_cont">
+		<h2>О нас</h2>
+		<div class="row">
+			<div class="col-1">
+				<h3>Мы любим превращать идеи в красивые вещи</h3>
+				<p>
+					Создавая интернет-проект, мы подходим к задаче комплексно: разрабатываем концепцию, дизайн (от проектирования до
+					юзабилити), внедряем новые программные решения,
+					занимаемся наполнением контента и технической поддержкой. Наша цель — не просто создать некий продукт, а сформировать
+					эффективный канал взаимодействия между
+					брендом и
+					потребителем. Сейчас одним из приоритетных направлений для нас является маркетинг в digital-среде.
+				</p>
+			</div>
+			<div class="col-2">
+				<img class="img-responsive" src="images/img-1.png" alt="Мы любим превращать идеи в красивые вещ"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="screen screen-orange" id="features">
+	<div class="b-wrap screen_cont">
+		<h2>Особенности</h2>
+		<div class="row">
+			<div class="col-2">
+				<h3>Ваш сайт будет прекрасно смотреться на всех устройствах</h3>
+				<p>
+					Современный мир ускоряется. Современный клиент желает иметь доступ к покупкам тогда, когда у него появляется свободное
+					время (на работе, в пути, на отдыхе или
+					дома). Мы считаем, что сайт обязан понимать, как именно он должен подавать информацию для посетителя и быть удобным в
+					использовании не тоьлько на компьютерах,
+					но и планшетах и телефонах.
+				</p>
+			</div>
+			<div class="col-1">
+				<img class="img-responsive" src="images/img-2.png" alt="Мы любим превращать идеи в красивые вещ"/>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-1">
+				<h3>Мы идём в ногу со временем!</h3>
+				<p>
+					Разрабатываем бэкенд и фронтенд с применением передовых технологий и алгоритмов. На сервере используем фреймворк “ruby
+					on rails” и свои наработки на этой платформе, что позволяет нам писать гибкий, быстрый, качественный и что немаловажно
+					безопасный код. Для интерфейсной части используем зарекомендовавший себя с наилучших сторон фреймворк angularjs, jquery.
+					Использование данных технологий позволяет получить на выходе качественный продукт заточенный под клиента(клиенту не
+					придётся изучать сложную админку).
+				</p>
+			</div>
+			<div class="col-2">
+				<img class="img-responsive" src="images/img-3.png" alt="Мы любим превращать идеи в красивые вещ"/>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-2">
+				<h3>Мы готовы предоставить вам поддержку вашего проекта</h3>
+				<p>
+					Реализовать и запустить проект – это полдела, наша компания готова предоставить вам услуги по дальнейшуму развитию и
+					поодержки вашего проекта на любое время. Работа осуществляется оперативно, качественно и с соблюдением сроков.
+				</p>
+			</div>
+			<div class="col-1">
+				<img class="img-responsive" src="images/img-4.png" alt="Мы любим превращать идеи в красивые вещ"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="screen screen-2" id="portfolio">
+	<div class="b-wrap screen_cont">
+		<h2>Портфолио</h2>
+		<div class="jcarousel__cont">
+			<div class="chevron jcarousel-prev"><span class="icon icon-chevron-left"></span></div>
+			<div class="jcarousel">
+				<ul>
+					<li>
+						<a href="#"><img src="images/feature2.jpg"/></a>
+						<h4><a href="#">Название проекта</a></h4>
+						<div>24.06.2014</div>
+					</li>
+					<li>
+						<img src="images/feature2.jpg"/>
+						<h4>Название проекта</h4>
+						<div>24.06.2014</div>
+					</li>
+					<li>
+						<img src="images/feature2.jpg"/>
+						<h4>Название проекта</h4>
+						<div>24.06.2014</div>
+					</li>
+					<li>
+						<img src="images/feature2.jpg"/>
+						<h4>Название проекта</h4>
+						<div>24.06.2014</div>
+					</li>
+					<li><img src="images/feature2.jpg"/></li>
+					<li><img src="images/feature3.jpg"/></li>
+					<li><img src="images/feature2.jpg"/></li>
+					<li><img src="images/feature3.jpg"/></li>
+					<li><img src="images/feature1.jpg"/></li>
+					<li><img src="images/feature3.jpg"/></li>
+				</ul>
+			</div>
+			<div class="chevron jcarousel-next"><span class="icon icon-chevron-right"></span></div>
+		</div>
+	</div>
+</section>
+
+<div class="b-wrap">
+	<hr class="blue"/>
+</div>
+
+<section class="screen screen-2" id="price">
+	<div class="b-wrap screen_cont">
+		<h2>Стоимость</h2>
+
+	</div>
+</section>
+
+<section class="screen screen-2" id="contacts">
+	<div class="b-wrap screen_cont">
+		<h2></h2>
+
+	</div>
+</section>
 
 <script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
